@@ -6,3 +6,5 @@ Debug
 Release
 .vs
 *.user
+*/debug.*
+*/release.*

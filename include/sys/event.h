@@ -52,7 +52,7 @@ static inline int event_create(event_t* event)
 
 	pthread_mutexattr_init(&mutex);
 #if defined(OS_LINUX)
-	pthread_mutexattr_settype(&mutex, PTHREAD_MUTEX_RECURSIVE_NP);
+	pthread_mutexattr_settype(&mutex, PTHREAD_MUTEX_RECURSIVE);
 #else
 	pthread_mutexattr_settype(&mutex, PTHREAD_MUTEX_RECURSIVE);
 #endif
